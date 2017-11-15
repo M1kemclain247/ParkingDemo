@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Marshal Declare Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView44"
+        android:layout_margin="15dp"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="15dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Total"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_weight="12.34"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView16"
+                        android:textStyle="normal|bold"
+                        android:textAppearance="@android:style/TextAppearance.Material"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:text="$"
+                        android:layout_width="wrap_content"
+
+                        android:id="@+id/textView15"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/editMarshalDeclareAmount"
+                        android:layout_width="134dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/edit_text_custom_selector"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:ems="10"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Confirm Total"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_weight="12.34"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal|bold"
+                        android:textAppearance="@android:style/TextAppearance.Material"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:text="$"
+                        android:layout_width="wrap_content"
+
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/editMarshalDeclareAmountConfirm"
+                        android:layout_width="134dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/edit_text_custom_selector"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:ems="10"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp">
+
+                </LinearLayout>
+
+                <Button
+                    android:text="Confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_receipt_black_24dp"
+                    android:background="@color/whitegrey"
+                    android:id="@+id/btnDeclareAmount"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

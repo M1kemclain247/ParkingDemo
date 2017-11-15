@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_spot_check"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.m1kes.parkingdemo.modules.supervisor.activities.SpotCheck"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:text="Operations:"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView43"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <Button
+            android:text="Check Transactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCheckTransactions"
+            android:drawableLeft="@drawable/ic_database_black_24dp"
+            />
+
+        <Button
+            android:text="Check Search History"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCheckSearchHistory"
+            android:drawableLeft="@drawable/ic_account_search_black_24dp"
+            />
+
+        <Button
+            android:text="Check Terminal Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCheckTerminalStatus"
+            android:drawableLeft="@drawable/ic_cellphone_basic_black_24dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

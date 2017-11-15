@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_spot_check"
+        android:title="SpotCheck"
+        android:icon="@drawable/ic_lock_outline_white_24dp"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        >
+    </item>
+    <item android:id="@+id/action_print"
+        android:title="Printers"
+        android:icon="@drawable/ic_printer_white_48dp"
+        app:showAsAction="always"
+        android:orderInCategory="2"
+        >
+    </item>
+    <item android:id="@+id/action_sync"
+        android:title="Sync"
+        android:icon="@drawable/ic_sync_white_48dp"
+        app:showAsAction="always"
+        android:orderInCategory="3"
+        >
+    </item>
+
+    <item android:id="@+id/action_loggedin_vehicles"
+        android:title="Logged In Vehicles"
+        app:showAsAction="never"
+        android:orderInCategory="5"
+        >
+    </item>
+
+    <item android:id="@+id/action_register_printer_temp"
+        android:title="Register New Printer"
+        app:showAsAction="never"
+        android:orderInCategory="7"
+        >
+    </item>
+
+    <item android:id="@+id/action_device_settings"
+        android:title="Device Settings"
+        app:showAsAction="never"
+        android:orderInCategory="7"
+        >
+    </item>
+    <item android:id="@+id/action_about_us"
+        android:title="About Us"
+        app:showAsAction="never"
+        android:orderInCategory="9"
+        >
+    </item>
+</menu>

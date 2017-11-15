@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.m1kes.parkingdemo">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:name=".networking.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logo_3"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".firsttimeterminalreg.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".services.MyWebService" />
+
+        <provider
+            android:name=".sqlite.provider.DatabaseContentProvider"
+            android:authorities="parkProviderAuthorities" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VehicleLogin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".VehicleLog" />
+        <activity
+            android:name=".ArrearsPayment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ViewPrinterJobs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".printer.Activity_DeviceList"
+            android:label="Device List"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueToothDeviceTheme" />
+        <activity
+            android:name=".CheckVehiclesLoggedIn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchVehicle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VehicleSearchDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".printer.PrinterDevices"
+            android:label="Allowed Devices"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueToothDeviceTheme" />
+        <activity
+            android:name=".MySchedule"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterAPrinter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShiftManager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SyncTransactions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.supervisor.AdvancedMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.supervisor.activities.DumpTransactions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nononsenseapps.filepicker.FilePickerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/FilePickerTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.supervisor.activities.SpotCheck"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings.activities.DeviceSettingsManager"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".managers.recievers.BootReciever"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".printer.ScanDeviceList"
+            android:label="Device List"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueToothDeviceTheme" />
+        <activity
+            android:name=".SyncShifts"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ShiftChecker" />
+        <activity android:name=".ArrearLogin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <receiver android:name="com.example.m1kes.parkingdemo.recievers.AlarmReceiver" />
+    </application>
+
+</manifest>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dump_transactions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.m1kes.parkingdemo.modules.supervisor.activities.DumpTransactions"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:text="Export:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            <Button
+                android:text="Open Folder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnOpenFolder"
+                android:drawableLeft="@drawable/ic_folder_download_black_24dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="Choose Export Folder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnBrowseExportFolder"
+                android:drawableLeft="@drawable/ic_folder_multiple_black_24dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:text="Dumps will be saved to:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView32"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="C://DRIVE/ECT/ECT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFileExportDirectory"
+            android:textStyle="normal|italic" />
+
+        <Button
+            android:text="Start Export"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStartDump"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableLeft="@drawable/ic_file_export_black_24dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Exported Files:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView27"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/jsonExportsRecycler" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp">>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="12.34">
+
+                            <TextView
+                                android:text="Registration Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:textStyle="normal|bold"
+                                android:textAppearance="@android:style/TextAppearance.Material" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="12.34">
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Login_editRegNumber"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="12.34">
+
+                            <TextView
+                                android:text="Arrears Owing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:textStyle="normal|bold"
+                                android:textAppearance="@android:style/TextAppearance.Material"
+                                android:id="@+id/Login_txtCurrentUserBalanceStatus" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="12.34">
+
+                            <TextView
+                                android:text="$0.00"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txtLoginCurrentUserBalance"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <TextView
+                                android:text="Entry Time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txtNumFines"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:textStyle="normal|bold"
+                                android:textAppearance="@android:style/TextAppearance.Material"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Login_editEntryTime"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <TextView
+                                android:text="Last Logged"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:textStyle="normal|bold"
+                                android:textAppearance="@android:style/TextAppearance.Material"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Login_lastLogged"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:text="Bay Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView17"
+                                android:layout_weight="20"
+                                android:textStyle="normal|bold"
+                                android:textAppearance="@android:style/TextAppearance.Material"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="numberDecimal"
+                                android:ems="10"
+                                android:id="@+id/Login_editBayNumber"
+                                android:background="@drawable/edit_text_custom_selector"
+                                android:layout_margin="10dp"
+                                android:paddingRight="4dp"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:layout_weight="1"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <TextView
+                                android:text="Duration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txtPaymentMethod"
+                                android:layout_weight="1"
+                                android:textStyle="normal|bold"
+                                android:textAppearance="@android:style/TextAppearance.Material"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:ems="10"
+                                android:id="@+id/Login_editDuration"
+                                android:background="@drawable/edit_text_custom_selector"
+                                android:paddingRight="4dp"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:layout_margin="10dp" />
+
+                            <TextView
+                                android:text="hours"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView39"
+                                android:layout_weight="1"
+                                android:layout_marginTop="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <TextView
+                                android:text="Amount Due"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txtFinePayment"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:textStyle="normal|bold"
+                                android:textAppearance="@android:style/TextAppearance.Material"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <TextView
+                                android:text="$"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="5dp" />
+
+                            <EditText
+                                android:layout_width="192dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:ems="10"
+                                android:id="@+id/Login_editAmountDue"
+                                android:background="@drawable/edit_text_custom_selector"
+                                android:layout_margin="10dp"
+                                android:paddingRight="4dp"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <TextView
+                                android:text="Tendered"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txtTender"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:textStyle="normal|bold"
+                                android:textAppearance="@android:style/TextAppearance.Material"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <TextView
+                                android:text="$"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="5dp" />
+
+                            <EditText
+                                android:layout_width="190dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:ems="10"
+                                android:id="@+id/Login_editTender"
+                                android:background="@drawable/edit_text_custom_selector"
+                                android:layout_margin="10dp"
+                                android:paddingRight="4dp"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="25.62">
+
+                            <TextView
+                                android:text="Change"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txtChange"
+                                android:layout_weight="1"
+                                android:layout_margin="10dp"
+                                android:textStyle="normal|bold"
+                                android:textAppearance="@android:style/TextAppearance.Material"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="25.62">
+
+                            <TextView
+                                android:text="$"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="5dp" />
+
+                            <EditText
+                                android:layout_width="186dp"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:id="@+id/Login_editChange"
+                                android:ellipsize="start"
+                                android:inputType="numberDecimal"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/edit_text_custom_selector"
+                                android:paddingRight="4dp"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <TextView
+                                android:text="Payment Method"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txtPaymentMethod1"
+                                android:layout_weight="1"
+                                android:textStyle="normal|bold"
+                                android:textAppearance="@android:style/TextAppearance.Material"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="20">
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/Login_spinnerPaymentMethods"
+                                style="@style/spinner_style"
+                                android:popupBackground="#cccccc"
+                                android:layout_weight="20"
+                                android:layout_margin="4dp"
+                                android:prompt="@string/payment_method_spinner_prompt"
+                                android:entries="@array/paymentMethods"
+                                android:spinnerMode="dialog"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:text="Cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Login_btnCancel"
+                            android:layout_weight="1"
+
+                           />
+
+                        <Button
+                            android:text="Login Vehicle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnLoginVehicle"
+                            android:layout_weight="1"
+
+                           />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
